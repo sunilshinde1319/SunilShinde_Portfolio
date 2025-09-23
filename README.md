@@ -25,7 +25,7 @@ It is designed to be simple, responsive, and easy to navigate.
 ## 🚀 Deployment
 This portfolio is deployed via **GitHub Pages**.  
 You can view it live here:  
-👉 [Portfolio Website](https://sunilshinde1319.github.io/SunilShinde_Portfolio/)
+👉 [Portfolio Website](https://s3portfolio.netlify.app/)
 
 ---
 
