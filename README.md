@@ -97,9 +97,3 @@ I'm always excited to connect with fellow developers, tech enthusiasts, and pote
 [<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />](mailto:sunilshinde5699@gmail.com)
 
 </div>
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
