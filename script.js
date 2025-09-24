@@ -1,124 +1,143 @@
-// ================= Dynamic Year =================
-document.getElementById("year").textContent = new Date().getFullYear();
-
-// ================= Skills Graph Animation =================
 document.addEventListener("DOMContentLoaded", function () {
-  const bars = document.querySelectorAll(".bar");
-  const skillsSection = document.querySelector("#skills");
+    
+    // 1. THEME SWITCHER LOGIC
+    const themeToggle = document.getElementById("theme-toggle");
+    const body = document.body;
 
-  function animateBars() {
-    const sectionPos = skillsSection.getBoundingClientRect().top;
-    const screenPos = window.innerHeight;
-    if (sectionPos < screenPos - 100) {
-      bars.forEach(bar => {
-        let percent = bar.getAttribute("data-percent");
-        bar.style.height = percent + "%";
-      });
-      window.removeEventListener("scroll", animateBars);
-    }
-  }
-  window.addEventListener("scroll", animateBars);
-});
-
-// =================  Hero Section Animation =================
-
-
- document.addEventListener("DOMContentLoaded", function () {
-  const lines = [
-    { text: "It's me", id: "line1", speed: 20 },
-    { text: "        Sunil Shinde", id: "line2", speed: 20 }, // spaces before text
-    { text: "                Java Developer", id: "line3", speed: 20 } // more spaces
-  ];
-
-  let currentLine = 0;
-
-  function typeLine(lineIndex) {
-    const line = lines[lineIndex];
-    const el = document.getElementById(line.id);
-    let i = 0;
-
-    function typing() {
-      if (i < line.text.length) {
-        el.textContent += line.text.charAt(i);
-        i++;
-        setTimeout(typing, line.speed);
-      } else {
-        el.classList.add("finished"); // remove cursor
-        currentLine++;
-        if (currentLine < lines.length) {
-          setTimeout(() => typeLine(currentLine), 500); // start next line
+    // Function to apply the saved theme on page load
+    const applySavedTheme = () => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            body.classList.add('light-mode');
+            themeToggle.checked = true;
+        } else {
+            body.classList.remove('light-mode');
+            themeToggle.checked = false;
         }
-      }
+    };
+
+    // Event listener for the theme toggle
+    themeToggle.addEventListener('change', () => {
+        if (themeToggle.checked) {
+            body.classList.add('light-mode');
+            localStorage.setItem('theme', 'light');
+        } else {
+            body.classList.remove('light-mode');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+
+    // Apply theme when the page loads
+    applySavedTheme();
+
+    // 2. CUSTOM CURSOR
+    const cursorDot = document.querySelector(".cursor-dot");
+    const cursorOutline = document.querySelector(".cursor-outline");
+
+    window.addEventListener("mousemove", function (e) {
+        const posX = e.clientX;
+        const posY = e.clientY;
+
+        cursorDot.style.left = `${posX}px`;
+        cursorDot.style.top = `${posY}px`;
+
+        cursorOutline.animate({
+            left: `${posX}px`,
+            top: `${posY}px`
+        }, { duration: 500, fill: "forwards" });
+    });
+
+    // 3. DYNAMIC YEAR IN FOOTER
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // 4. NAVBAR SCROLL EFFECT
+    const nav = document.getElementById("topNav");
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            nav.classList.add("scrolled");
+        } else {
+            nav.classList.remove("scrolled");
+        }
+    });
+
+    // 5. DUAL TYPING ANIMATIONS
+    function setupTypingEffect(elementSelector, words) {
+        const typingElement = document.querySelector(elementSelector);
+        if (!typingElement) return;
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentWord = words[wordIndex];
+            const visibleText = isDeleting 
+                ? currentWord.substring(0, charIndex--) 
+                : currentWord.substring(0, charIndex++);
+
+            typingElement.textContent = visibleText;
+
+            if (!isDeleting && charIndex === currentWord.length + 1) {
+                isDeleting = true;
+                setTimeout(type, 2000); // Wait before deleting
+            } else if (isDeleting && charIndex === -1) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(type, 500); // Wait before typing next word
+            } else {
+                const typingSpeed = isDeleting ? 75 : 120;
+                setTimeout(type, typingSpeed);
+            }
+        }
+        type();
     }
-    typing();
-  }
 
-  typeLine(currentLine); // start typing first line
-});
+    // Initialize Hero Typing Effect
+    setupTypingEffect(".hero-typing-effect", ["Java Developer", "Backend Engineer", "Full Stack Developer"]);
+    
+    // Initialize Navbar Typing Effect
+    setupTypingEffect(".nav-typing-effect", ["Welcome...", "Hello!", "नमस्ते!", "Sunil Shinde"]);
 
+    // 6. FADE-IN ANIMATION ON SCROLL
+    const faders = document.querySelectorAll(".fade-in");
+    const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
 
-// ================= Fade-In Sections =================
-const faders = document.querySelectorAll(".fade-in-section");
-const appearOptions = { threshold: 0.2 };
-const appearOnScroll = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add("show");
-    observer.unobserve(entry.target);
-  });
-}, appearOptions);
-faders.forEach(fader => { appearOnScroll.observe(fader); });
+    // 7. VANILLA-TILT.JS FOR SKILL CARDS
+    VanillaTilt.init(document.querySelectorAll(".skill-card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+    });
+    
+    // 8. SCROLLSPY FOR NAVBAR ACTIVE LINK
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll("#navMenu .nav-link");
 
-// ================= Navbar Scroll Effect =================
-window.addEventListener("scroll", function () {
-  const nav = document.getElementById("topNav");
-  if (window.scrollY > 50) nav.classList.add("scrolled");
-  else nav.classList.remove("scrolled");
-});
+    window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (window.pageYOffset >= sectionTop - 150) {
+                current = section.getAttribute("id");
+            }
+        });
 
-// ================= Typing Animation =================
-const typingElement = document.querySelector(".typing");
-const words = ["Welcome...", "Hello!", "नमस्ते!", "Welcome back!"];
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(current)) {
+                link.classList.add("active");
+            }
+        });
+    });
 
-function typeEffect() {
-  const currentWord = words[wordIndex];
-  const visibleText = currentWord.substring(0, charIndex);
-  typingElement.textContent = visibleText;
-
-  if (!isDeleting && charIndex < currentWord.length) {
-    charIndex++;
-    setTimeout(typeEffect, 120);
-  } else if (isDeleting && charIndex > 0) {
-    charIndex--;
-    setTimeout(typeEffect, 80);
-  } else {
-    if (!isDeleting) {
-      isDeleting = true;
-      setTimeout(typeEffect, 1200);
-    } else {
-      isDeleting = false;
-      wordIndex = (wordIndex + 1) % words.length;
-      setTimeout(typeEffect, 200);
-    }
-  }
-}
-if (typingElement) typeEffect();
-
-// Fade-in on scroll effect
-const sections = document.querySelectorAll('.fade-in-section');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.2 });
-
-sections.forEach(section => {
-  observer.observe(section);
 });
