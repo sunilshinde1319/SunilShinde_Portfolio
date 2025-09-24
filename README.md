@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://path-to-your-logo-or-banner/image.png" alt="Portfolio Banner" width="800"/>
+  <img src="https://drive.google.com/file/d/1mqphV1vvBC6h3Y-flyCi7kKsStIIxqKq/view?usp=drive_link" alt="Portfolio Banner" width="800"/>
   <h1><b>Sunil Shinde | Java Developer Portfolio</b></h1>
   <p>An interactive and animated personal portfolio built with modern web technologies, featuring a dual-theme system, 3D effects, and a custom cursor experience.</p>
 </div>
@@ -12,8 +12,6 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/Overview.en.html)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_NETLIFY_BADGE_ID/deploy-status)](https://app.netlify.com/sites/s3portfolio/deploys)
-
 </div>
 
 ---
