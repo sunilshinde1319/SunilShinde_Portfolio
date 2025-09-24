@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://drive.google.com/file/d/1mqphV1vvBC6h3Y-flyCi7kKsStIIxqKq/view?usp=drive_link" alt="Portfolio Banner" width="800"/>
+  <img src="https://drive.google.com/uc?export=view&id=1mqphV1vvBC6h3Y-flyCi7kKsStIIxqKq" alt="Portfolio Banner" width="800"/>
   <h1><b>Sunil Shinde | Java Developer Portfolio</b></h1>
   <p>An interactive and animated personal portfolio built with modern web technologies, featuring a dual-theme system, 3D effects, and a custom cursor experience.</p>
 </div>
