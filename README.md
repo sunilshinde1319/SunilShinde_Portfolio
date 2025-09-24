@@ -22,10 +22,9 @@
 
 <div align="center">
   <a href="https://s3portfolio.netlify.app/" target="_blank">
-    <img src="https://user-images.githubusercontent.com/YOUR_GITHUB_ID/YOUR_IMAGE_ID/portfolio-demo.gif" alt="Portfolio Live Demo GIF" width="800"/>
+    <img src="./assets/portfolio-demo.gif" alt="Portfolio Live Demo GIF" width="800"/>
   </a>
-  <br/>
-  <i>(Tip: Record a short GIF showcasing the theme switcher, custom cursor, and scroll animations to place here!)</i>
+ 
 </div>
 
 ---
