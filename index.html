@@ -44,6 +44,7 @@
             <div id="navMenu" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
@@ -75,14 +76,14 @@
                 <h1 class="hero-title">Sunil Shinde</h1>
                 <h2 class="hero-subtitle">I'm a <span class="hero-typing-effect"></span></h2>
                 <p class="hero-summary mx-auto">
-                    Highly motivated Java Developer skilled in Spring Boot and Microservices, building secure, scalable web applications with a commitment to high-quality software.
+                    A highly motivated Java Developer specializing in Spring Boot and Microservices. I build secure, scalable, and high-performance web applications with a commitment to delivering quality software.
                 </p>
                 <div class="hero-actions mt-4">
                     <a href="https://drive.google.com/file/d/1MHrozXqQFfSXb2mrVuKSPCwXPHPWXCKz/view" target="_blank" class="btn btn-primary-custom">Download Resume <i class="bi bi-download ms-2"></i></a>
                     <div class="hero-socials">
-                        <a href="https://linkedin.com/in/s2001" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/sunilshinde1319" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
-                        <a href="mailto:sunilshinde5699@gmail.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="https://linkedin.com/in/s2001" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/sunilshinde1319" target="_blank" aria-label="GitHub" title="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="mailto:sunilshinde5699@gmail.com" aria-label="Email" title="Email"><i class="bi bi-envelope-fill"></i></a>
                     </div>
                 </div>
                 <a href="#about" class="scroll-down-indicator"><i class="bi bi-mouse"></i></a>
@@ -97,8 +98,8 @@
                     <h2 class="section-title">About Me</h2>
                     <div class="row mt-5 align-items-center g-4">
                         <div class="col-lg-7">
-                            <p>I am a backend-focused Java Developer with hands-on experience in the Spring ecosystem, including Spring MVC, RESTful APIs, Spring Security, and Spring Data JPA. I enjoy designing clean, maintainable architectures and delivering reliable features from end to end.</p>
-                            <p>I am passionate about problem-solving and continuously learning new technologies to enhance my skill set. Currently seeking roles where I can contribute to building robust backend systems and grow within an engineering-driven team.</p>
+                            <p>I am a backend-focused Java Developer with extensive experience in the Spring ecosystem, including Spring MVC, RESTful APIs, Spring Security, and Spring Data JPA. I excel at designing clean, maintainable architectures and delivering reliable, end-to-end features.</p>
+                            <p>My passion for problem-solving drives me to continuously learn new technologies and enhance my skill set. I am currently seeking opportunities where I can contribute to building robust backend systems and grow within an engineering-driven team that values innovation and quality.</p>
                         </div>
                         <div class="col-lg-5">
                             <div class="info-card">
@@ -113,7 +114,37 @@
                 </div>
             </section>
 
-            <!-- EXPERIENCE SECTION -->
+            <!-- WHAT I DO (SERVICES) SECTION -->
+            <section id="services" class="py-5">
+                <div class="container fade-in">
+                    <h2 class="section-title">What I Do</h2>
+                    <div class="row g-4 mt-5 text-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card">
+                                <div class="service-icon"><i class="bi bi-hdd-stack-fill"></i></div>
+                                <h5 class="service-title">Backend Development</h5>
+                                <p class="service-text">Building scalable and secure server-side applications using Java, Spring Boot, and microservices architecture.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card">
+                                <div class="service-icon"><i class="bi bi-braces"></i></div>
+                                <h5 class="service-title">API Design & Integration</h5>
+                                <p class="service-text">Designing and implementing robust RESTful APIs and integrating third-party services like payment gateways.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card">
+                                <div class="service-icon"><i class="bi bi-database-fill-gear"></i></div>
+                                <h5 class="service-title">Database Management</h5>
+                                <p class="service-text">Working with both SQL (MySQL) and NoSQL (MongoDB) databases to ensure efficient data persistence and retrieval.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+          <!-- EXPERIENCE SECTION -->
             <section id="experience" class="py-5">
                 <div class="container fade-in">
                     <h2 class="section-title">Internship Experience</h2>
@@ -124,13 +155,18 @@
                                 <span class="timeline-date">Dec 2024 - May 2025</span>
                                 <h4 class="timeline-title">Full Stack Developer Intern</h4>
                                 <h6 class="timeline-subtitle">Codaaz Software, Nagpur</h6>
-                                <p>Designed and developed core modules for an Employee Task Management System following Agile methodologies.</p>
+                                <p>Led the end-to-end development of a comprehensive, full-stack insurance claim management system (InsureS3App) using a modern microservices architecture and Agile methodologies.</p>
                                 <ul>
-                                    <li>Created REST APIs using Spring Boot and managed data persistence with MySQL and JPA.</li>
-                                    <li>Implemented role-based access control with Spring Security.</li>
-                                    <li>Built responsive frontend components using HTML, CSS, JavaScript, and Bootstrap.</li>
-                                    <li>Utilized Git for version control in a collaborative team environment.</li>
+                                    <li>Engineered scalable backend services with Spring Boot, designing RESTful APIs for user management, policy applications, and claim processing.</li>
+                                    <li>Implemented a secure, JWT-based authentication system with role-based access control (User/Admin) to protect sensitive data and application endpoints.</li>
+                                    <li>Integrated the Razorpay API to handle real-world payment processing for insurance premiums and simulate claim payouts.</li>
+                                    <li>Developed a dynamic and responsive user interface with React.js, creating an intuitive multi-step application process for users and a graphical dashboard for administrators.</li>
+                                    <li>Established a CI/CD pipeline and utilized Git for version control, ensuring smooth collaboration and efficient deployment cycles.</li>
                                 </ul>
+                                <div class="project-links">
+                                    <a href="https://drive.google.com/file/d/1woYBV4LfxE0qI75QGHZQGS26QUjHpc0P/view?usp=sharing" target="_blank"><i class="bi bi-file-earmark-text-fill"></i> Offer Letter</a>
+                                    <a href="https://drive.google.com/file/d/15fZzw_uw2VMZ0kRM6aMcQE41JX_5zrf1/view?usp=sharing" target="_blank"><i class="bi bi-patch-check-fill"></i> Completion Letter</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -141,22 +177,56 @@
             <section id="skills" class="py-5">
                 <div class="container fade-in">
                     <h2 class="section-title">Technical Skills</h2>
-                    <div class="skills-container mt-5">
-                        <div class="skill-card" data-tilt><i class="devicon-java-plain-wordmark colored"></i><span>Java</span></div>
-                        <div class="skill-card" data-tilt><i class="devicon-spring-plain-wordmark colored"></i><span>Spring Boot</span></div>
-                        <div class="skill-card" data-tilt><i class="devicon-hibernate-plain-wordmark colored"></i><span>Hibernate</span></div>
-                        <div class="skill-card" data-tilt><i class="devicon-angularjs-plain colored"></i><span>Angular</span></div>
-                        <div class="skill-card" data-tilt><i class="bi bi-hdd-stack-fill" style="color:#00A98F;"></i><span>Microservices</span></div>
-                        <div class="skill-card" data-tilt><i class="devicon-mysql-plain-wordmark colored"></i><span>MySQL</span></div>
-                        <div class="skill-card" data-tilt><i class="devicon-mongodb-plain-wordmark colored"></i><span>MongoDB</span></div>
-                        <div class="skill-card" data-tilt><i class="devicon-html5-plain-wordmark colored"></i><span>HTML5</span></div>
-                        <div class="skill-card" data-tilt><i class="devicon-css3-plain-wordmark colored"></i><span>CSS3</span></div>
-                        <div class="skill-card" data-tilt><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-                        <div class="skill-card" data-tilt><i class="devicon-bootstrap-plain-wordmark colored"></i><span>Bootstrap</span></div>
-                        <div class="skill-card" data-tilt><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
-                        <div class="skill-card" data-tilt><i class="devicon-kubernetes-plain-wordmark colored"></i><span>Kubernetes</span></div>
-                        <div class="skill-card" data-tilt><i class="devicon-git-plain-wordmark colored"></i><span>Git & GitHub</span></div>
-                        <div class="skill-card" data-tilt><i class="bi bi-diagram-3-fill" style="color:#F05032;"></i><span>Data Structures</span></div>
+                    <div class="skills-grid mt-5">
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">Languages</h5>
+                            <div class="skills-container">
+                                <div class="skill-card" data-tilt><i class="devicon-java-plain-wordmark colored"></i><span>Java</span></div>
+                                <div class="skill-card" data-tilt><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                                <div class="skill-card" data-tilt><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">Backend</h5>
+                            <div class="skills-container">
+                                <div class="skill-card" data-tilt><i class="devicon-spring-plain-wordmark colored"></i><span>Spring Boot</span></div>
+                                <div class="skill-card" data-tilt><i class="devicon-hibernate-plain-wordmark colored"></i><span>Hibernate</span></div>
+                                <div class="skill-card" data-tilt><i class="bi bi-hdd-stack-fill" style="color:#00A98F;"></i><span>Microservices</span></div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">Frontend</h5>
+                            <div class="skills-container">
+                                <div class="skill-card" data-tilt><i class="devicon-react-original colored"></i><span>React</span></div>
+                                <div class="skill-card" data-tilt><i class="devicon-html5-plain-wordmark colored"></i><span>HTML5</span></div>
+                                <div class="skill-card" data-tilt><i class="devicon-css3-plain-wordmark colored"></i><span>CSS3</span></div>
+                                <div class="skill-card" data-tilt><i class="devicon-bootstrap-plain-wordmark colored"></i><span>Bootstrap</span></div>
+                            </div>
+                        </div>
+                         <div class="skill-category">
+                            <h5 class="skill-category-title">Databases</h5>
+                            <div class="skills-container">
+                                <div class="skill-card" data-tilt><i class="devicon-mysql-plain-wordmark colored"></i><span>MySQL</span></div>
+                                <div class="skill-card" data-tilt><i class="devicon-mongodb-plain-wordmark colored"></i><span>MongoDB</span></div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">DevOps & Tools</h5>
+                            <div class="skills-container">
+                                <div class="skill-card" data-tilt><i class="devicon-git-plain-wordmark colored"></i><span>Git & GitHub</span></div>
+                                <div class="skill-card" data-tilt><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+                                <div class="skill-card" data-tilt><i class="bi bi-triangle-fill" style="color:#000000;"></i><span>Vercel</span></div>
+                                <div class="skill-card" data-tilt><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">Other</h5>
+                            <div class="skills-container">
+                                <div class="skill-card" data-tilt><i class="bi bi-diagram-3-fill" style="color:#F05032;"></i><span>Data Structures</span></div>
+                                <div class="skill-card" data-tilt><i class="bi bi-credit-card-2-front-fill" style="color:#3395FF;"></i><span>Razorpay API</span></div>
+                                <div class="skill-card" data-tilt><i class="bi bi-tools" style="color:#28a745;"></i><span>Testing Tools</span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -166,7 +236,25 @@
                 <div class="container fade-in">
                     <h2 class="section-title">Projects</h2>
                     <div class="row g-4 mt-5">
-                        <!-- Project 1 -->
+                        <!-- Project 1: InsureS3App -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="project-card">
+                                <img src="assets/projects/InsureS3AppHome.jpg" alt="InsureS3App">
+                                <div class="project-card-body">
+                                    <h5>InsureS3App - Insurance Claim System</h5>
+                                    <p>A full-stack insurance claim system with a microservices architecture for managing policies, claims, and payments with Razorpay.</p>
+                                    <div class="project-tech-stack">
+                                        <i class="devicon-spring-plain colored" title="Spring Boot"></i>
+                                        <i class="bi bi-hdd-stack-fill" style="color:#00A98F;" title="Microservices"></i>
+                                        <i class="bi bi-credit-card-2-front-fill" style="color:#3395FF;" title="Razorpay"></i>
+                                    </div>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/sunilshinde1319/InsureS3App-insurance-claim-management" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 2: Employee Task Management -->
                         <div class="col-lg-4 col-md-6">
                             <div class="project-card">
                                 <img src="assets/projects/emts.jpg" alt="Employee Task Management System">
@@ -176,16 +264,34 @@
                                     <div class="project-tech-stack">
                                         <i class="devicon-spring-plain colored" title="Spring Boot"></i>
                                         <i class="devicon-mysql-plain colored" title="MySQL"></i>
-                                        <i class="devicon-html5-plain colored" title="HTML5"></i>
+                                        <i class="devicon-react-original colored" title="React"></i>
                                     </div>
                                 </div>
                                 <div class="project-links">
                                     <a href="https://github.com/sunilshinde1319/EmployeeTaskManagementSystem" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-                                    <a href="assets/projects/etms-screens.pdf" target="_blank"><i class="bi bi-file-earmark-text"></i> Report</a>
                                 </div>
                             </div>
                         </div>
-                        <!-- Project 2 -->
+                        <!-- Project 3: Book Finder -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="project-card">
+                                <img src="assets/projects/bookfinder.jpg" alt="Book Finder">
+                                <div class="project-card-body">
+                                    <h5>Book Finder</h5>
+                                    <p>A responsive web app to search, filter, and explore books using the Open Library API, featuring infinite scrolling and a favorites list.</p>
+                                    <div class="project-tech-stack">
+                                        <i class="devicon-react-original colored" title="React"></i>
+                                        <i class="devicon-css3-plain colored" title="CSS Modules"></i>
+                                        <i class="bi bi-triangle-fill" style="color:#000000;" title="Vercel"></i>
+                                    </div>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/sunilshinde1319/BookFinder" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                                    <a href="https://book-finder-lemon-pi.vercel.app/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 4: SmartAssignmentHub -->
                         <div class="col-lg-4 col-md-6">
                             <div class="project-card">
                                 <img src="assets/projects/smarthub.jpg" alt="SmartAssignmentHub">
@@ -200,11 +306,10 @@
                                 </div>
                                 <div class="project-links">
                                     <a href="https://github.com/sunilshinde1319/SmartAssignmentHub-SIOM-" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-                                    <a href="assets/projects/SmartAssinmentHub_Synopsis.pdf" target="_blank"><i class="bi bi-file-earmark-text"></i> Report</a>
                                 </div>
                             </div>
                         </div>
-                        <!-- Project 3 -->
+                        <!-- Project 5: RapidWriterTest -->
                         <div class="col-lg-4 col-md-6">
                             <div class="project-card">
                                 <img src="assets/projects/rapidwriter.jpg" alt="RapidWriterTest">
@@ -218,8 +323,7 @@
                                     </div>
                                 </div>
                                 <div class="project-links">
-                                    <a href="https://github.com/sunilshinde1319" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-                                    <a href="assets/projects/rapidwriter-screens.pdf" target="_blank"><i class="bi bi-file-earmark-text"></i> Report</a>
+                                    <a href="https://github.com/sunilshinde1319/RapidWriterTest" target="_blank"><i class="bi bi-github"></i> GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -238,6 +342,7 @@
                                 <span class="timeline-date">2023 – 2025</span>
                                 <h4 class="timeline-title">Master of Computer Applications (MCA)</h4>
                                 <h6 class="timeline-subtitle">Sinhgad Institute Of Management (SIOM), Pune</h6>
+                                <p class="mb-0"><strong>Percentage:</strong> 75.68%</p>
                             </div>
                         </div>
                         <div class="timeline-item">
@@ -246,14 +351,16 @@
                                 <span class="timeline-date">2019 – 2022</span>
                                 <h4 class="timeline-title">Bachelor of Computer Applications (BCA)</h4>
                                 <h6 class="timeline-subtitle">Institute Of Technology And Management (ITM), Nanded</h6>
+                                <p class="mb-0"><strong>Percentage:</strong> 82.19%</p>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
-                            <div class.timeline-content">
+                            <div class="timeline-content">
                                 <span class="timeline-date">2018 – 2019</span>
                                 <h4 class="timeline-title">Higher Secondary Certificate (HSC)</h4>
                                 <h6 class="timeline-subtitle">Jawaharlal Nehru Vidhyalay, Barbada</h6>
+                                <p class="mb-0"><strong>Percentage:</strong> 74.20%</p>
                             </div>
                         </div>
                         <div class="timeline-item">
@@ -262,42 +369,120 @@
                                 <span class="timeline-date">2016 – 2017</span>
                                 <h4 class="timeline-title">Secondary School Certificate (SSC)</h4>
                                 <h6 class="timeline-subtitle">Jawaharlal Nehru Vidhyalay, Barbada</h6>
+                                <p class="mb-0"><strong>Percentage:</strong> 79.80%</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <!-- CERTIFICATES SECTION -->
-            <section id="certs" class="py-5">
-                <div class="container fade-in">
-                    <h2 class="section-title">Certificates</h2>
-                    <div class="row g-4 mt-5">
-                        <div class="col-lg-3 col-md-6"><a href="https://www.hackerrank.com/certificates/c753c077ac71" target="_blank" class="cert-card"><h5>Software Engineer</h5><p>HackerRank</p></a></div>
-                        <div class="col-lg-3 col-md-6"><a href="https://www.hackerrank.com/certificates/fe952c098557" target="_blank" class="cert-card"><h5>Advanced MySQL</h5><p>HackerRank</p></a></div>
-                        <div class="col-lg-3 col-md-6"><a href="https://www.udemy.com/certificate/UC-f32a6f33-2e53-4c32-aa86-6e2f95e899d8/" target="_blank" class="cert-card"><h5>Complete Python Developer</h5><p>Udemy</p></a></div>
-                        <div class="col-lg-3 col-md-6"><a href="https://www.linkedin.com/in/s2001/overlay/1727832743429/single-media-viewer/" target="_blank" class="cert-card"><h5>R Programming</h5><p>IIT Bombay</p></a></div>
+       
+       <!-- CERTIFICATES SECTION -->
+        <section id="certs" class="py-5">
+            <div class="container fade-in">
+                <h2 class="section-title">Certificates</h2>
+                <div class="row g-4 mt-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="project-card text-center">
+                            <div class="project-card-body">
+                                <h5>Software Engineer</h5>
+                                <p>HackerRank</p>
+                                <span class="cert-description">Validated problem-solving and coding skills in a professional software engineering context.</span>
+                            </div>
+                            <div class="project-links justify-content-center">
+                                <a href="https://www.hackerrank.com/certificates/c753c077ac71" target="_blank"><i class="bi bi-box-arrow-up-right"></i> View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="project-card text-center">
+                            <div class="project-card-body">
+                                <h5>Generative AI/Prompt Engineering</h5>
+                                <p>Udemy</p>
+                                <span class="cert-description">Mastered prompt design techniques to effectively interact with and leverage large language models.</span>
+                            </div>
+                            <div class="project-links justify-content-center">
+                                <a href="https://www.udemy.com/certificate/UC-your-certificate-id/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="project-card text-center">
+                            <div class="project-card-body">
+                                <h5>Advanced MySQL</h5>
+                                <p>HackerRank</p>
+                                <span class="cert-description">Demonstrated proficiency in complex queries, joins, and database optimization.</span>
+                            </div>
+                            <div class="project-links justify-content-center">
+                                <a href="https://www.hackerrank.com/certificates/fe952c098557" target="_blank"><i class="bi bi-box-arrow-up-right"></i> View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="project-card text-center">
+                            <div class="project-card-body">
+                                <h5>Complete Python Developer</h5>
+                                <p>Udemy</p>
+                                <span class="cert-description">Gained comprehensive knowledge of Python for backend development, scripting, and automation.</span>
+                            </div>
+                            <div class="project-links justify-content-center">
+                                <a href="https://www.udemy.com/certificate/UC-f32a6f33-2e53-4c32-aa86-6e2f95e899d8/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="project-card text-center">
+                            <div class="project-card-body">
+                                <h5>R Programming</h5>
+                                <p>IIT Bombay</p>
+                                <span class="cert-description">Acquired foundational skills in data manipulation, statistical analysis, and visualization using R.</span>
+                            </div>
+                            <div class="project-links justify-content-center">
+                                <a href="https://www.linkedin.com/in/s2001/overlay/1727832743429/single-media-viewer/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> View Certificate</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- CONTACT SECTION -->
-            <section id="contact" class="py-5">
-                <div class="container text-center fade-in">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <p class="lead mt-4 mx-auto" style="max-width: 600px;">I'm currently open to new opportunities. If you have a question or just want to say hi, I'll try my best to get back to you!</p>
-                    <div class="mt-5">
-                        <a href="mailto:sunilshinde5699@gmail.com" class="btn btn-primary-custom">Say Hello <i class="bi bi-send-fill ms-2"></i></a>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-5">
+            <div class="container fade-in">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="lead mt-4 text-center mx-auto" style="max-width: 600px;">I'm currently open to new opportunities. If you have a question, a proposal, or just want to say hi, feel free to reach out!</p>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-8">
+                        <form id="contact-form" action="https://formspree.io/f/xjkjapwk" method="POST">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary-custom">Send Message <i class="bi bi-send-fill ms-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                        <p id="form-status" class="text-center mt-3"></p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         </div>
     </main>
 
     <!-- FOOTER -->
     <footer class="text-center py-4">
         <div class="container">
-            <p class="mb-0">&copy; <span id="year"></span> Sunil Shinde(Java Developer). All Rights Reserved.</p>
+            <p class="mb-0">&copy; <span id="year"></span> Sunil Shinde (Java Developer). All Rights Reserved.</p>
         </div>
     </footer>
 
